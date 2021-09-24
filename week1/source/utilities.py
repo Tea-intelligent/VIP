@@ -16,7 +16,7 @@ def gray_convert(img):
     return gray_img
 
 
-def video_convert(path, start, step, destination):
+def video_convert(path: str, start: int, step: int, destination: str):
     vidcap = cv2.VideoCapture(path)
     vidcap.set(cv2.CAP_PROP_POS_FRAMES, start)
     success, image = vidcap.read()
